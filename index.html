@@ -62,14 +62,14 @@ const STR={
  ct:{zh:'中国城',en:'Chinatown'}, ld:{zh:'全伦敦',en:'All London'},
  ftype:{zh:'店的类型',en:'Type of place'}, ftypen:{zh:'（数字 = 现在在营的店）',en:' (number = places open now)'},
  forig:{zh:'来自（国家或地区）',en:'Origin (country or region)'},
- orign:{zh:'“来自”：奶茶·茶饮店写品牌最早在哪里创立（中国大陆地区、中国台湾地区、英国本地……）；纯茶·茶馆和茶叶店写卖的是哪种茶（中国茶、英国茶、日本抹茶），店主背景写在点开的说明里。“未知”= 没找到公开来源，不按店名猜。',en:'“Origin”: for bubble-tea and tea-drink shops, where the brand was first founded (Chinese mainland, Taiwan region of China, UK…); for pure-tea places and tea-leaf shops, the kind of tea they sell (Chinese, British, Japanese matcha). “Unknown” = no public source found; we do not guess from the name.'},
+ orign:{zh:'“来自”：奶茶·茶饮店写品牌最早在哪里创立（中国大陆地区、中国台湾地区、英国本地……）；纯茶·茶馆和茶叶店写卖的是哪种茶（中国茶、英国茶、日本抹茶），店主背景写在点开的说明里。“未知”= 没找到公开来源，不按店名猜。',en:'“Origin”: for bubble-tea and tea-drink shops, where the brand was first founded (Chinese mainland, Taiwan region (CN), UK…); for pure-tea places and tea-leaf shops, the kind of tea they sell (Chinese, British, Japanese matcha). “Unknown” = no public source found; we do not guess from the name.'},
  lg1:{zh:'之前就在',en:'already there'}, lg2:{zh:'这一年新出现',en:'new this year'}, lg3:{zh:'将来要开（规划申请；不一定会开）',en:'planned (planning application; may not open)'},
  lg4:{zh:'形状：● 奶茶·茶饮　■ 纯茶·茶馆　◆ 茶叶店',en:'Shape: ● bubble tea / tea drinks　■ pure tea / teahouse　◆ tea-leaf shop'},
  foot:{zh:'“2012”= 2012 年及以前；最右一格“将来”同时显示申请中的店。关掉的店：查得到开、关年份的，按年份出现、到关店那年消失；查不到年份的列在地图下面。食品卫生登记只列现在还登记着的店，关掉的会从登记里消失，所以关店数被少算，更早关掉的大多看不到。',en:'“2012” = 2012 or earlier; the last step, “future”, also shows planned places. Closed places: where both years are known, they appear and disappear by year; the rest are listed under the map. The register lists only places registered today, so closed places drop out and closures are undercounted.'}
 };
 const TY={'奶茶·茶饮':'Bubble tea / tea drinks','纯茶·茶馆':'Pure tea / teahouse','茶叶店':'Tea-leaf shop'};
 const ORZ={'中国大陆':'中国大陆地区','台湾':'中国台湾地区','香港':'中国香港地区'};
-const OR={'中国大陆':'Chinese mainland','英国本地':'UK','台湾':'Taiwan region, China','香港':'Hong Kong SAR, China','日本':'Japan','韩国':'South Korea','东南亚':'Southeast Asia','美国':'USA','中国茶':'Chinese tea','英国茶':'British tea','其他':'Other','未知':'Unknown'};
+const OR={'中国大陆':'Chinese mainland','英国本地':'UK','台湾':'Taiwan region (CN)','香港':'Hong Kong SAR (CN)','日本':'Japan','韩国':'South Korea','东南亚':'Southeast Asia','美国':'USA','中国茶':'Chinese tea','英国茶':'British tea','其他':'Other','未知':'Unknown'};
 const Z=(zh,en)=>LANG==='en'?en:zh;
 const tv=(m,v)=>LANG==='en'?(m[v]||v):(m===OR?(ORZ[v]||v):v);
 const hasZh=x=>/[一-鿿]/.test(String(x??''));
